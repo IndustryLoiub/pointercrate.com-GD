@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GD Player Leaderboard</title>
-</head>
-<body style="background:#111;color:white;font-family:Arial;text-align:center;">
-    <h1>🏆 GD Player Leaderboard 🏆</h1>
-    <p>Welcome to my Geometry Dash Player Leaderboard!</p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industry's GD Player Leaderboard</title>
 
-    <table border="1" style="margin:auto;border-collapse:collapse;">
-        <tr>
-            <th>Rank</th>
-            <th>Player</th>
-            <th>Points</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Your Player</td>
-            <td>1000</td>
-        </tr>
-    </table>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🏆 Industry's GD Player Leaderboard</h1>
+<p>Custom Ranking System • Top 50 Players</p>
+</header>
+
+<div class="search">
+<input type="text" id="searchInput" placeholder="Search players...">
+</div>
+
+<table id="leaderboard">
+<thead>
+<tr>
+<th>#</th>
+<th>Player</th>
+<th>Country</th>
+<th>Points</th>
+</tr>
+</thead>
+
+<tbody id="players">
+</tbody>
+
+</table>
+
+<script src="script.js"></script>
+
 </body>
 </html>
