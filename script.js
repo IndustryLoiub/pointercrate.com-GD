@@ -224,7 +224,7 @@ points:1427.47
 {
 rank:38,
 name:"Johnlikediamond",
-country:"",
+country:"🇺🇸",
 points:1395.17
 },
 {
@@ -278,7 +278,7 @@ points:1312.95
 {
 rank:47,
 name:"l1nxxd",
-country:"",
+country:"🇦🇺",
 points:1309.45
 },
 {
