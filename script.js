@@ -149,154 +149,169 @@ name:"Hqmy",
 country:"🇺🇸",
 points:1701.39
 },
-,
 {
-    rank:26,
-    name:"JesseGamingGD",
-    country:"",
-    points:1685.74
+rank:26,
+name:"JesseGamingGD",
+country:"🇳🇱",
+points:1685.74
 },
 {
-    rank:27,
-    name:"Nexel",
-    country:"",
-    points:1668.93
+rank:27,
+name:"Nexel",
+country:"🇨🇦",
+points:1668.93
 },
 {
-    rank:28,
-    name:"Mizukii",
-    country:"",
-    points:1663.32
+rank:28,
+name:"Mizukii",
+country:"🇩🇪",
+points:1663.32
 },
 {
-    rank:29,
-    name:"Hover",
-    country:"",
-    points:1535.88
+rank:29,
+name:"Hover",
+country:"🇦🇹",
+points:1535.88
 },
 {
-    rank:30,
-    name:"donley",
-    country:"",
-    points:1527.81
+rank:30,
+name:"donley",
+country:"🇨🇦",
+points:1527.81
 },
 {
-    rank:31,
-    name:"WaterBottle317",
-    country:"",
-    points:1521.62
+rank:31,
+name:"WaterBottle317",
+country:"🇺🇸",
+points:1521.62
 },
 {
-    rank:32,
-    name:"Superjavicon",
-    country:"",
-    points:1508.62
+rank:32,
+name:"Superjavicon",
+country:"",
+points:1508.62
 },
 {
-    rank:33,
-    name:"Stefan Boss",
-    country:"",
-    points:1494.82
+rank:33,
+name:"Stefan Boss",
+country:"🇷🇴",
+points:1494.82
 },
 {
-    rank:34,
-    name:"Serpentical",
-    country:"",
-    points:1476.35
+rank:34,
+name:"Serpentical",
+country:"🇭🇺",
+points:1476.35
 },
 {
-    rank:35,
-    name:"Doggie",
-    country:"",
-    points:1471.86
+rank:35,
+name:"Doggie",
+country:"🇺🇸",
+points:1471.86
 },
 {
-    rank:36,
-    name:"Jerpaa",
-    country:"",
-    points:1436.62
+rank:36,
+name:"Jerpaa",
+country:"🇫🇮",
+points:1436.62
 },
 {
-    rank:37,
-    name:"MeQ8cNv43s6A",
-    country:"",
-    points:1427.47
+rank:37,
+name:"MeQ8cNv43s6A",
+country:"🇯🇵",
+points:1427.47
 },
 {
-    rank:38,
-    name:"Johnlikediamond",
-    country:"",
-    points:1395.17
+rank:38,
+name:"Johnlikediamond",
+country:"",
+points:1395.17
 },
 {
-    rank:39,
-    name:"Tunax",
-    country:"",
-    points:1393.64
+rank:39,
+name:"Tunax",
+country:"🇳🇴",
+points:1393.64
 },
 {
-    rank:40,
-    name:"Syrcx",
-    country:"",
-    points:1389.94
+rank:40,
+name:"Syrcx",
+country:"🇮🇱",
+points:1389.94
 },
 {
-    rank:41,
-    name:"ChopBlox",
-    country:"",
-    points:1385.30
+rank:41,
+name:"ChopBlox",
+country:"🇩🇪",
+points:1385.30
 },
 {
-    rank:42,
-    name:"Cursed",
-    country:"",
-    points:1369.93
+rank:42,
+name:"Cursed",
+country:"🇬🇧",
+points:1369.93
 },
 {
-    rank:43,
-    name:"teraaa",
-    country:"",
-    points:1340.14
+rank:43,
+name:"teraaa",
+country:"🇰🇿",
+points:1340.14
 },
 {
-    rank:44,
-    name:"ProudGiraffe311",
-    country:"",
-    points:1335.93
+rank:44,
+name:"ProudGiraffe311",
+country:"🇺🇸",
+points:1335.93
 },
 {
-    rank:45,
-    name:"Seturan",
-    country:"",
-    points:1320.22
+rank:45,
+name:"Seturan",
+country:"🇰🇷",
+points:1320.22
 },
 {
-    rank:46,
-    name:"whfyre",
-    country:"",
-    points:1312.95
+rank:46,
+name:"whfyre",
+country:"🇺🇦",
+points:1312.95
 },
 {
-    rank:47,
-    name:"l1nxxd",
-    country:"",
-    points:1309.45
+rank:47,
+name:"l1nxxd",
+country:"",
+points:1309.45
 },
 {
-    rank:48,
-    name:"ViperVenom95",
-    country:"",
-    points:1305.43
+rank:48,
+name:"ViperVenom95",
+country:"🇦🇺",
+points:1305.43
 },
 {
-    rank:49,
-    name:"Komet01",
-    country:"",
-    points:1302.04
+rank:49,
+name:"Komet01",
+country:"🇵🇱",
+points:1302.04
 },
 {
-    rank:50,
-    name:"Albert",
-    country:"",
-    points:1278.88
+rank:50,
+name:"Albert",
+country:"🇺🇸",
+points:1278.88
 }
+];
+
+const table = document.getElementById("leaderboard");
+
+players.forEach(player => {
+  const row = document.createElement("tr");
+
+  row.innerHTML = `
+    <td>#${player.rank}</td>
+    <td>${player.name}</td>
+    <td>${player.country}</td>
+    <td>${player.points.toFixed(2)}</td>
+  `;
+
+  table.appendChild(row);
+});
