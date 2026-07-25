@@ -62,3 +62,17 @@ footer{
     margin:40px;
     color:#94a3b8;
 }
+tbody tr:nth-child(1) {
+    background: #ffd70022;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(2) {
+    background: #c0c0c022;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(3) {
+    background: #cd7f3222;
+    font-weight: bold;
+}
