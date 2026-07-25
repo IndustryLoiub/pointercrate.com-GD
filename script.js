@@ -307,7 +307,11 @@ players.forEach(player => {
   const row = document.createElement("tr");
 
   row.innerHTML = `
-    <td>#${player.rank}</td>
+    <td>${
+player.rank==1?"🥇":
+player.rank==2?"🥈":
+player.rank==3?"🥉":"#"+player.rank
+}</td>
     <td>${player.name}</td>
     <td>${player.country}</td>
     <td>${player.points.toFixed(2)}</td>
